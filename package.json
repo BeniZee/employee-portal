@@ -1,0 +1,13 @@
+{
+  "name": "employee-portal",
+  "version": "1.0.0",
+  "description": "Employee Portal Application",
+  "scripts": {
+    "dev": "concurrently \"cd client && npm run dev\" \"cd backend && npm run dev\"",
+    "install-all": "npm install && cd client && npm install && cd ../backend && npm install",
+    "start": "concurrently \"cd client && npm start\" \"cd backend && npm start\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
